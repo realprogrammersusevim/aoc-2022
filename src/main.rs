@@ -1,6 +1,7 @@
 mod day_1;
 mod day_2;
 mod day_3;
+mod day_4;
 mod utils;
 
 fn main() {
@@ -13,6 +14,11 @@ fn main() {
     // println!("Total points: {}", day_2::eval_strat(false)); // For puzzle two
 
     // Day 3
-    println!("Total points: {:?}", day_3::sort_rucksacks().0,);
-    println!("Points of badges: {:?}", day_3::sort_rucksacks().1)
+    // println!("Total points: {:?}", day_3::sort_rucksacks().0,);
+    // println!("Points of badges: {:?}", day_3::sort_rucksacks().1)
+
+    // Day 4
+    let results = day_4::get_overlap();
+    println!("Number completely contained: {}", results.0);
+    println!("Number overlapping: {}", results.1);
 }
