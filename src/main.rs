@@ -1,5 +1,6 @@
 mod day_1;
 mod day_2;
+mod day_3;
 mod utils;
 
 fn main() {
@@ -9,5 +10,9 @@ fn main() {
 
     // Day 2
     // println!("Total points: {}", day_2::eval_strat(true)); // For puzzle one
-    println!("Total points: {}", day_2::eval_strat(false)); // For puzzle two
+    // println!("Total points: {}", day_2::eval_strat(false)); // For puzzle two
+
+    // Day 3
+    println!("Total points: {:?}", day_3::sort_rucksacks().0,);
+    println!("Points of badges: {:?}", day_3::sort_rucksacks().1)
 }
