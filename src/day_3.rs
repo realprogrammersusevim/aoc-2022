@@ -2,7 +2,7 @@ use crate::utils::read_file;
 use std::collections::HashSet;
 
 pub fn sort_rucksacks() -> (i32, i32) {
-    let input = read_file("input/3.txt");
+    let input = read_file("input/3.input");
     let lines: Vec<&str> = input.lines().collect();
 
     let mut count = 0;

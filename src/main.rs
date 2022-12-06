@@ -2,6 +2,7 @@ mod day_1;
 mod day_2;
 mod day_3;
 mod day_4;
+mod day_5;
 mod utils;
 
 fn main() {
@@ -18,7 +19,10 @@ fn main() {
     // println!("Points of badges: {:?}", day_3::sort_rucksacks().1)
 
     // Day 4
-    let results = day_4::get_overlap();
-    println!("Number completely contained: {}", results.0);
-    println!("Number overlapping: {}", results.1);
+    // let results = day_4::get_overlap();
+    // println!("Number completely contained: {}", results.0);
+    // println!("Number overlapping: {}", results.1);
+
+    // Day 5
+    println!("{:?}", day_5::sim_stack());
 }

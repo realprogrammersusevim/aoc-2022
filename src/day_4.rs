@@ -8,7 +8,7 @@ struct Elf {
 }
 
 pub fn get_overlap() -> (i32, i32) {
-    let input = read_file("input/4.txt");
+    let input = read_file("input/4.input");
     let lines: Vec<&str> = input.lines().collect();
 
     let mut contained = 0;

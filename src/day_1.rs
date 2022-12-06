@@ -1,7 +1,7 @@
 use crate::utils;
 
 pub fn get_calories() -> Vec<i32> {
-    let input = utils::read_file("input/1.txt");
+    let input = utils::read_file("input/1.input");
     let lines: Vec<&str> = input.lines().collect();
 
     let mut elves: Vec<i32> = Vec::new();

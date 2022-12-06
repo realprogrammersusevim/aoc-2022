@@ -2,7 +2,7 @@ use crate::utils::read_file;
 
 // Puzzle is true for first and false for second
 pub fn eval_strat(puzzle: bool) -> i32 {
-    let input = read_file("input/2.txt");
+    let input = read_file("input/2.input");
     let lines: Vec<&str> = input.lines().collect();
     let mut you: Vec<&str> = Vec::new();
     let mut them: Vec<&str> = Vec::new();
