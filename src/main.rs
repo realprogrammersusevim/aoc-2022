@@ -1,8 +1,10 @@
+#![allow(dead_code)]
 mod day_1;
 mod day_2;
 mod day_3;
 mod day_4;
 mod day_5;
+mod day_6;
 mod utils;
 
 fn main() {
@@ -24,5 +26,9 @@ fn main() {
     // println!("Number overlapping: {}", results.1);
 
     // Day 5
-    println!("{:?}", day_5::sim_stack());
+    // println!("{:?}", day_5::sim_stack());
+
+    // Day 6
+    println!("Message start index: {}", day_6::find_begin(4));
+    println!("Message end index: {}", day_6::find_begin(14));
 }
