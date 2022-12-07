@@ -39,7 +39,9 @@ fn main() {
     // Day 5
     println!("Day 5");
     println!("=======");
-    println!("{:?}", day_5::sim_stack());
+    let day5 = day_5::sim_stack();
+    println!("Stacker 2000: {}", day5.0);
+    println!("Stacker 2001: {}", day5.1);
     println!("");
 
     // Day 6
