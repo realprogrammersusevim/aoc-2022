@@ -21,5 +21,5 @@ pub fn find_begin(length: i32) -> i32 {
             return to_return as i32;
         }
     }
-    return 0;
+    0
 }

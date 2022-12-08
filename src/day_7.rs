@@ -33,7 +33,7 @@ pub fn get_space() -> usize {
             continue;
         }
 
-        let (amount, _) = line.split_once(" ").unwrap();
+        let (amount, _) = line.split_once(' ').unwrap();
 
         if let Ok(amount) = amount.parse::<usize>() {
             stack.last_mut().unwrap().1 += amount;
@@ -42,11 +42,11 @@ pub fn get_space() -> usize {
         }
     }
 
-    while stack.len() > 0 {
+    while !stack.is_empty() {
         let (name, amount) = stack.pop().unwrap();
         final_countdown.push((name, amount));
 
-        if stack.len() > 0 {
+        if !stack.is_empty() {
             stack.last_mut().unwrap().1 += amount;
         }
     }
@@ -57,7 +57,7 @@ pub fn get_space() -> usize {
         .into_iter()
         .filter(move |(_, amount)| *amount >= space_required)
         .map(|(_, amount)| {
-            return amount;
+            amount
         })
         .min();
 

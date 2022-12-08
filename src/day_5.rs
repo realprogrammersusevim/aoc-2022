@@ -9,7 +9,7 @@ pub fn sim_stack() -> (String, String) {
     let mut stack2: Vec<Vec<String>> = Vec::new();
     let re = Regex::new(r"^move (\d+) from (\d+) to (\d+)$").unwrap();
     for (i, line) in lines.enumerate() {
-        if i + 1 <= 9 {
+        if i < 9 {
             // Convert the Regex captures to a Vector
             let mut caps_vec: Vec<String> = Vec::new();
             for char in line.chars() {
@@ -55,5 +55,5 @@ pub fn sim_stack() -> (String, String) {
     let lasts_vec2: Vec<String> = stack2.iter().map(|x| x[x.len() - 1].clone()).collect();
     let lasts2 = lasts_vec2.join("");
     // assert_eq!(stack, vec![vec!["C"], vec!["M"], vec!["Z", "N", "D", "P"]]);
-    return (lasts1, lasts2);
+    (lasts1, lasts2)
 }

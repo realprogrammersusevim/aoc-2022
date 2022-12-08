@@ -44,5 +44,5 @@ pub fn get_overlap() -> (i32, i32) {
         }
     }
 
-    return (contained, overlapping);
+    (contained, overlapping)
 }

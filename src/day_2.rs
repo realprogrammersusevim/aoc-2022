@@ -33,7 +33,7 @@ pub fn eval_strat(puzzle: bool) -> i32 {
         }
     }
 
-    return total_points;
+    total_points
 }
 
 fn winner(them: &str, you: &str) -> i32 {

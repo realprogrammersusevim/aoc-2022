@@ -7,7 +7,7 @@ pub fn get_calories() -> Vec<i32> {
     let mut elves: Vec<i32> = Vec::new();
     let mut calories = 0;
     for line in lines.iter() {
-        if line.len() == 0 {
+        if line.is_empty() {
             elves.push(calories);
             calories = 0;
         } else {
@@ -24,5 +24,5 @@ pub fn get_calories() -> Vec<i32> {
 
     let mut elves_to_return: Vec<i32> = sorted_elves.iter().take(3).cloned().collect();
     elves_to_return.push(elves_to_return.iter().sum());
-    return elves_to_return;
+    elves_to_return
 }
