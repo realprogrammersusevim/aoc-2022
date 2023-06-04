@@ -9,12 +9,6 @@ mod day_7;
 mod utils;
 
 fn main() {
-    // Day 1
-    // println!("Day 1");
-    // println!("=======");
-    // let elf_calories = day_1::get_calories();
-    // println!("The elf carrying the most calories has {}, the second has {}, the third has {}, and the sum of those top three is {}", elf_calories[0], elf_calories[1], elf_calories[2], elf_calories[3]);
-
     // Day 2
     // println!("Day 2");
     // println!("=======");
