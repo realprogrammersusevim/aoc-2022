@@ -32,3 +32,36 @@ fn get_elf_calories(input: &str) -> Vec<i32> {
     let elves_to_return: Vec<i32> = sorted_elves.iter().take(3).cloned().collect();
     elves_to_return
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::get_elf_calories;
+
+    const TEST_INPUT: &str = " 1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000";
+
+    #[test]
+    fn part_one() {
+        let output = get_elf_calories(&TEST_INPUT);
+        assert_eq!(output[0], 24000)
+    }
+
+    #[test]
+    fn part_two() {
+        let output: Vec<i32> = get_elf_calories(&TEST_INPUT);
+        println!("{:?}", output);
+        assert_eq!(output.iter().sum::<i32>(), 45000)
+    }
+}
